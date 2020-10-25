@@ -21,12 +21,16 @@ tmp/*
 
 # Ignore configuration files that may contain sensitive information.
 docroot/sites/*/settings.local.php
+docroot/sites/*/settings.development.php
 docroot/sites/*/settings.devdesktop.php
 docroot/sites/*/services*.yml
 
 # Ignore paths that contain user-generated content.
 docroot/sites/*/files
 docroot/sites/*/private
+docroot/sites/*/public
+docroot/sites/*/files-public
+docroot/sites/*/files-private
 
 # Ignore SimpleTest multi-site environment.
 docroot/sites/simpletest
@@ -40,10 +44,6 @@ docroot/sites/*.dd
 # Others
 /drush
 /bin
-docroot/libraries
-docroot/modules/contrib
-docroot/themes/contrib
-docroot/profiles/contrib
 /backups
 /behat-screenshots
 .DS_Store
